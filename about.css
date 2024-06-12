@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    
+    font-family:"Poppins", sans-serif ;
+    background-color: black;
+    overflow: -moz-hidden-unscrollable;
+    margin-bottom: 4px solid black; 
+
+}
+nav {
+    float: inherit;
+    height: 45px;
+  background-color: #090909;
+    z-index: 4;
+    
+}
+nav ul {
+  margin: 0;
+  padding : 0;
+}
+nav ul li {
+  list-style: none;
+   display: inline-block;
+    
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  display: block;
+  padding : 25px 35px; 
+}
+
+.trgr {
+  background: linear-gradient(to right, rgba(6, 120, 121, 0.5), rgba(24, 22, 22, 1.8));
+}
+.bgnd{
+    background-image: url("image/img6.jpg"); 
+                    background-repeat: no-repeat; 
+                    //background-size: 100%; 
+                    //background-attachment: scroll;
+                    
+}
+.container {
+    margin:20px 20px;
+    color:white;
+  
+
+}
+.heading{
+    font-size: 60px;
+    color: white;
+}
+
+.heading span{
+    font-style:italic;
+    font-size: 30px;
+}
+
+.profiles{
+    display: flex;
+    justify-content: space-around;
+    /* margin: 20px 20px;
+    padding-bottom: 3px; */
+}
+.profile{
+    flex-basis: 260px;
+    background-color: rgb(164, 99, 19);
+    border-radius: 10px;
+    padding: 16px;
+}
+
+.profile{
+    box-shadow: 0 0 5px 0 ; 
+      background: inherit; 
+      backdrop-filter: blur(10px); 
+}
+
+.profile .profile-img{
+    height: 260px;
+    width: 260px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.profile:hover .profile-img{
+    filter: grayscale(0);
+}
+
+.user-name{
+    margin-top: 30px;
+    font-size: 35px;
+}
+
+
+
+@media only screen and (max-width: 1150px){
+    .profiles{
+        flex-direction: column;
+    }
+    .profile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .profile p{
+       text-align: center;
+       margin:20px 60px 80px 60px ; 
+       font-size: 20px;
+    }
+}
+.profile h5{
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 3px;
+    color: #ccc;
+}
+
+.profile p{
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.bottom{
+    
+    height: 10px;
+    width: 100%;
+    display: inline-block;
+    height: 83%;
+    background-color: black;
+}
+
+@media only screen and (max-width:900px){
+    .heading{
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+    .heading span{
+        font-size: 15px;
+    }
+
+    .profiles{
+        margin: 20px 20px;
+    }
+    .profile p{
+        margin: 20px 10px 80px 10px;        
+    }
+}
