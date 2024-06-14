@@ -149,6 +149,47 @@ nav ul li a {
 .tab.tab1 .content .des p{
     font-size: 17px;
 }
+.visit{
+    text-align: center;
+    padding-top: 18px;
+    text-decoration: none;
+}
+.button-a {
+    align-items: center;
+    border: none;
+    background-color: #F891B3;
+    color: #4f4949;
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    box-shadow: 5px 5px 5px #FBC1D4;
+    transition: all 0.5s ease;
+  }
+  .button-a a{
+    text-decoration: none;
+    color: inherit;
+  }
+  .button-a a,.button-a a:visited, button-a a:hover, button-a a:active {
+    color: inherit;  
+    text-decoration: none;
+    
+  }
+  .button-a:hover {
+    box-shadow: 0px 2px 20px #9a0436;
+    top: 3px;
+  }
+  .button-a:active {
+    box-shadow: none;
+    top: 5px;
+  }
+  .visita{
+    text-align: center;
+    padding-top: 18px;
+    align-items: center;
+  }
 #ahh {
     text-align: center;
     font-size: 26px;
