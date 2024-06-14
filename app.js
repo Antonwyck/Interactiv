@@ -103,6 +103,7 @@ const generateResponse = (chatElement) => {
     else if((Boolean(now1.includes("baymax"))==true) || (Boolean(now1.includes("whoareyou"))) || (Boolean(now1.includes("aboutyou"))==true) ){anytime(bay);}
     else if((Boolean(now1.includes("museum"))==true||Boolean(now1.includes("louvre"))==true)){anytime(mue);} 
     else if(Boolean(now1.includes("howareyou"))==true){anytime("I'm fine");}
+         else if(Boolean(now1.includes("loveanton"))==true){anytime(lvant);}
     else if(Boolean(now1.includes("anton"))==true){anytime(lead);}
     else if(Boolean(now1.includes("anitta"))==true){anytime(ani);}
     else if(Boolean(now1.includes("allan"))==true){anytime(allan);} 
@@ -128,8 +129,7 @@ const generateResponse = (chatElement) => {
     else if(Boolean(now1.includes("venice"))==true){anytime(nine);}
     else if(Boolean(now1.includes("alexander"))==true){anytime(ninePhot);}
     else if(Boolean(now1.includes("thankyou"))==true ||(Boolean(now1.includes("thanks"))==true)){anytime(thank);}
-    else if(Boolean(now1.includes("welcome"))==true){anytime(welcome);}
-    else if(Boolean(now1.includes("loveanton"))==true){anytime(lvant);}
+    else if(Boolean(now1.includes("welcome"))==true){anytime(welcome);}   
     else if(Boolean(now1.includes("members"))==true||(Boolean(now1.includes("team"))==true)){anytime(members);}
     else if(Boolean(now1.includes("bye"))==true ||(Boolean(now1.includes("goodbye"))==true)){anytime(bye);}
    
