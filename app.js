@@ -98,13 +98,16 @@ const generateResponse = (chatElement) => {
     // })  
 
     if((Boolean(now1.includes("hello"))==true)||(Boolean(now1.includes("hi"))==true)){anytime(ash);console.log(ash);}
-    else if((Boolean(now1.includes("love"))==true&&Boolean(now1.includes("you"))==true)){anytime(love);}
-    else if((Boolean(now1.includes("hate"))==true&&Boolean(now1.includes("you"))==true)){anytime(hate);}
-    else if((Boolean(now1.includes("baymax"))==true) || (Boolean(now1.includes("you"))==true) ){anytime(bay);}
+    else if((Boolean(now1.includes("loveyou"))==true)){anytime(love);}
+    else if((Boolean(now1.includes("hateyou"))==true)){anytime(hate);}
+    else if((Boolean(now1.includes("baymax"))==true) || (Boolean(now1.includes("whoareyou"))) || (Boolean(now1.includes("aboutyou"))==true) ){anytime(bay);}
     else if((Boolean(now1.includes("museum"))==true||Boolean(now1.includes("louvre"))==true)){anytime(mue);} 
+    else if(Boolean(now1.includes("howareyou"))==true){anytime("I'm fine");}
     else if(Boolean(now1.includes("anton"))==true){anytime(lead);}
-    else if(Boolean(now1.includes("anitta"))==true){anytime(ani);}  
-    else if(Boolean(now1.includes("award"))==true){anytime(nat);}
+    else if(Boolean(now1.includes("anitta"))==true){anytime(ani);}
+    else if(Boolean(now1.includes("allan"))==true){anytime(allan);} 
+    else if(Boolean(now1.includes("anusha"))==true){anytime(anuk);}   
+    else if(Boolean(now1.includes("award"))==true ||(Boolean(now1.includes("awards"))==true)){anytime(nat);}
     else if(Boolean(now1.includes("devjith"))==true){anytime(dev);}
     else if(Boolean(now1.includes("beauty"))==true){anytime(one);}
     else if(Boolean(now1.includes("julio"))==true){anytime(onePhot);}       
@@ -124,6 +127,11 @@ const generateResponse = (chatElement) => {
     else if(Boolean(now1.includes("pardo"))==true){anytime(onePhot);}
     else if(Boolean(now1.includes("venice"))==true){anytime(nine);}
     else if(Boolean(now1.includes("alexander"))==true){anytime(ninePhot);}
+    else if(Boolean(now1.includes("thankyou"))==true ||(Boolean(now1.includes("thanks"))==true)){anytime(thank);}
+    else if(Boolean(now1.includes("welcome"))==true){anytime(welcome);}
+    else if(Boolean(now1.includes("loveanton"))==true){anytime(lvant);}
+    else if(Boolean(now1.includes("members"))==true||(Boolean(now1.includes("team"))==true)){anytime(members);}
+    else if(Boolean(now1.includes("bye"))==true ||(Boolean(now1.includes("goodbye"))==true)){anytime(bye);}
    
     else {console.log("try again...");}
     function anytime(vari) {
@@ -189,15 +197,21 @@ let eight ="Galactic Hoodos is an 8K landscape took by Julio Castro Pardo which 
 let nine ="Night in Venice is an photo took by Aleksandr Ivanov which won the 3rd place in Nature/Landscape/Dawn in Sony Phtotgraphy awards in 2022";
 let ninePhot ="Alexander Ivanov is an full-time Nature photographer in Slovakia's most prestigious art gallery; he has given many presentations and speeches about photography in schools and museums, and even led a photography camp for the Royal BC Museum in Victoria, Canada. Today  Martin is a a full member of the ICG and drone pilotwith over five years experience in places across Canada, Europe, and the South Pacific";
 let lead="Anton Wiclif is an aspiring software engineer, who is an Developer in C, JS and it's major frameworks, Java, React etc..who has many honors behind his name, is also who happens to be the lead on this project";
-let ani="She is SUPER! That's all I have been told to say about her";
-let allan="Allan is one of the member of this project";
-let anuk="Anusha Sri is one of the member of this project";
-let dev="Devjith comes from a long-line of sea turtles🐢🐢🐢 that live on land for a shorter duration";
-let bay="I'm Baymax. I'm your personal AI Curator.My purpose is to guide you through this beautiful world of art. With access to vast collections and cutting-edge analysis tools, I'm here to assist you in uncovering the mystery behind each artwork.\n I was developed by the great Anton Wyck with his 3 very unhelpful friends😭, who I've been programmed not to name. ";
+let ani="She is SUPER! Anitta is one of the members of this project. She is a skilled programmer specializing in C and Java, with a passion for blogging, content writing, and creative thinking.";
+let allan="Allan is one of the member of this project. Alan is a professional graphic artist specializing in 3D and 2D animations, banner and poster design, and web development.";
+let anuk="Anusha Sri is one of the member of this project. Anusha is a proficient C programmer who loves vlogging, content writing, and designing website logos.";
+let dev="Devjith comes from a long-line of sea turtles🐢🐢🐢 that live on land for a shorter duration(like 4 years)";
+let bay="I'm Baymax. I'm your personal AI Curator.My purpose is to guide you through this beautiful world of art. With access to vast collections and cutting-edge analysis tools, I'm here to assist you in uncovering the mystery behind each artwork.\n I was developed by the great Anton Wyck with his unhelpful friends😭, who I've been programmed not to name. ";
 let mue ="The Louvre, or the Louvre Museum, is a national art museum in Paris, France. It is located on the Right Bank of the Seine in the city's 1st arrondissement and home to some of the most canonical works of Western art, including the Mona Lisa, Venus de Milo, and Winged Victory.";
 let nat="INTERNATIONAL PHOTOGRAPHY AWARDS™  are annually awarded at Lucie Awards gala. The International Photography Awards™ conducts an annual competition for professional photographers globally, creating one of the most ambitious and comprehensive competitions in the photography world today.";
-let love="Wish I could say the same buddy!Better you check yourself at a clinic";
-let hate="Wish I could say something, but I can't see a thing there";
+let love="Aww! Thank You! Wish I could say the same buddy!😍😍";
+let hate="I'm sorry to hear it, wish I could help you more!😞😞😞 Can I help you with any other questions?";
+let thank="You're welcome! If you need any more assistance, feel free to ask. Have a great day!";
+let welcome="Thank you! It's nice to feel appreciated.If there's anything else you need, just let me know. Have a great day!";
+let lvant="Aw, Thank you! I will give him your regards. He wishes the same to you";
+let bye="Goodbye! Have a wonderful day! If you ever need assistance in the future, feel free to reach out";
+let members="This project was created by a dedicated team led by Anton, the tech lead, along with his talented teammates Anitta, Alan and Anusha";
+
 
 sendChatBtn.addEventListener("click", handleChat);
 closeBtn.addEventListener("click", () => document.body.classList.remove("show-chatbot"));
