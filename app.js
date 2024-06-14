@@ -101,9 +101,10 @@ const generateResponse = (chatElement) => {
     else if((Boolean(now1.includes("loveyou"))==true)){anytime(love);}
     else if((Boolean(now1.includes("hateyou"))==true)){anytime(hate);}
     else if((Boolean(now1.includes("baymax"))==true) || (Boolean(now1.includes("whoareyou"))) || (Boolean(now1.includes("aboutyou"))==true) ){anytime(bay);}
+    else if(Boolean(now1.includes("yourname"))==true){anytime(bay);}
     else if((Boolean(now1.includes("museum"))==true||Boolean(now1.includes("louvre"))==true)){anytime(mue);} 
     else if(Boolean(now1.includes("howareyou"))==true){anytime("I'm fine");}
-         else if(Boolean(now1.includes("loveanton"))==true){anytime(lvant);}
+    else if(Boolean(now1.includes("loveanton"))==true){anytime(lvant);}
     else if(Boolean(now1.includes("anton"))==true){anytime(lead);}
     else if(Boolean(now1.includes("anitta"))==true){anytime(ani);}
     else if(Boolean(now1.includes("allan"))==true){anytime(allan);} 
